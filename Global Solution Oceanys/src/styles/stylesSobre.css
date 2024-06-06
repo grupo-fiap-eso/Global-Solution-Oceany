@@ -1,0 +1,217 @@
+/*Estilos padrões */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+/*.ubuntu-regular {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}*/
+
+:root{
+    --color-primary-1: #fff9ea;
+    --color-primary-2: #1d1d1dad;
+    --color-primary-3: #1d1d1d;
+}
+
+*{
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--color-primary-1);
+  
+}
+
+header{
+    width: 100%;
+    padding: 8px 6%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary-1);
+    z-index: 3;
+}
+
+section{
+    padding: 28px 9%;
+}
+
+
+#navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo{
+    width: 6rem;
+    margin-left: 25px;
+}
+
+#nav_list{
+    display: flex;
+    list-style: none;
+    gap: 49px;
+}
+
+.btn-user{
+    margin-right: 2.5rem;
+    color: gray;
+    background-color: transparent;
+    font-size: 33px;
+    border: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: var(--color-primary-2);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.nav-item.active a {
+    color: var(--color-primary-2);
+    border-bottom: 3px solid #193cd8bf;
+}
+
+.mobile_btn{
+    display: none;
+}
+
+#mobile_menu{
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    #nav_list,
+    #navbar .btn-user{
+        display: none;
+    }  
+    .btn-user{
+        margin: 0%;
+        background-color: transparent;
+
+    }
+
+    .mobile_btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #mobile_nav_list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+
+    #mobile_menu .nav-item{
+        list-style: none;
+        text-align: center;
+    }
+  
+}
+
+
+/*---------------------------------------------------------
+SEÇÃO SOBRE O TEMA */
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color-primary-1);
+}
+
+.sobre-title{
+
+    font-family: "Playfair Display", serif;
+    color: #061761;
+    font-size: 2.5rem;
+}
+
+.sobre hr{
+       margin-top: 20px;
+        width: 100%;
+        height: 2px;
+        border: 0px;
+        border-top: 1px solid;
+        margin-top: 1px;
+        margin-bottom: 2.5rem;
+        background-color: var(--color-primary-1);
+}
+
+.subtitulo{
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    max-width: 800px;
+}
+
+.sobre-geral{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.sobre-text{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 8px rgb(47 73 207 / 6%);
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre-icon{
+    background-color: #6073ca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--color-primary-1);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px 30px 30px 30px;
+
+}
+
+.sobre-infos{
+    color: #434343;
+
+}
+
+.sobre-infos li{
+    padding: 10px;
+    text-align: justify;
+}
