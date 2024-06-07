@@ -5,180 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oceanys</title>
-    <link rel="stylesheet" href="../styles/stylesHome.css">
+    <link rel="stylesheet" href="../styles/stylesCadastro.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9eb0a8bce2.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 
 <body>
+    <main class="container">
+        <h2>Login</h2>
+        <form action="">
+            <div class="input-field">
+                <input type="text" name="username" id="username" placeholder="Enter Your Username">
+                <div class="underline"></div>
 
-    <header>
-        <nav id="navbar">
-            <img id="nav_logo" src="../imgs/imgLogo.png" alt="">
-
-            <ul id="nav_list">
-                <li class="nav-item active">
-                    <a href="./indexH.html">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a href="../html/sobre.html">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#analise">Análise de Dados</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./paginaCorais.html">O Mundo dos Corais</a>
-                </li>
-            </ul>
-
-                
-            <a href="./cadastro.html" class="btn-user">
-                <i class="fa-solid fa-circle-user"></i>
-            </a>
-
-            <button class="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-        </nav>
-        <div id="mobile_menu">
-            <ul id="mobile_nav_list active">
-                <li class="nav-item">
-                    <a href="./indexH.html">Home</a>
-                </li>
-                <li class="nav-item ">
-                    <a href="./sobre.html">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./analiseDados.html">Análise de Dados</a>
-                </li>
-                <li class="nav-item">
-                    <a href="./paginaCorais.html">O Mundo dos Corais</a>
-                </li>
-            </ul>
-            
-            <a href="./cadastro.html" class="btn-user">
-                <i class="fa-solid fa-circle-user"></i>
-            </a>
-        </div>
-    </header> 
-
-
-        <section class="data-section">
-            <h3 class="data-titulo">Monitoramento dos corais por meio da análise de dados</h3>
-                <p class="blog-post-meta">Os corais são organismos marinhos de extrema importância para a biodiversidade e para a saúde dos ecossistemas costeiros. No entanto, eles têm enfrentado desafios significativos, como o branqueamento causado pelo aumento das temperaturas da água e a acidificação dos oceanos. Para monitorar esses corais de maneira eficiente, cientistas estão recorrendo à inteligência artificial (IA) e à colaboração humana.
-                
-                </p>
-            <p>Redes neurais inspiradas no cérebro humano são treinadas para analisar imagens capturadas por mergulhadores, identificando sinais de branqueamento, doenças ou outras condições adversas nos corais. Essa análise automatizada permite uma avaliação mais rápida e completa.</p>
-            
-                <div class="form-analise">
-                    <div class="col-md-7 col-lg-8">
-                        <h5 class="mb-3">Adicione os dados aqui</h5>
-                        <form action="" class="needs-validation" novalidate>
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <label for="name" class="form-label">Nome do responsável</label>
-                                    <input type="text" class="form-control" id="responsavel" placeholder="Roberto Patrício" value required>
-                                    <div class="invalid-feedback">É necessário informar o nome</div>
-                                    
-                                </div>
-
-                                <div class="col-sm-6">
-                                    <label for="professional" class="form-label">Profissão</label>
-                                    <input type="text" class="form-control" id="profissao" placeholder="Biólogo" value required>
-                                    <div class="invalid-feedback">É necessário informar a ocupação</div>
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="seuNome@email.com" value required>
-                                    <div class="invalid-feedback">É necessário informar o email</div>
-                                </div>
-                                <div class="row gy-3">
-                                    <div class="col-md-3">
-                                        <label for="number temperatura" class="form-label">Temperatura</label>
-                                         <input type="number" class="form-control" id="temperatura" placeholder="45C°" >
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="number ph" class="form-label">PH</label>
-                                         <input type="number" class="form-control" id="ph" placeholder="7" >
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="text" class="form-label">Salinidade</label>
-                                         <input type="number" class="form-control" id="salinidade" placeholder="Nível de salinidade da água" >
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="text" class="form-label">Nível de Nutriente</label>
-                                         <input type="number" class="form-control" id="nutriente" placeholder="Nível de Nutriente na água" >
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="data" class="form-label">Data</label>
-                                         <input type="date" class="form-control" id="data" placeholder="(00/00/0000)" >
-                                    </div>
-                                    <hr class="my-4 featurette-divider">
-                                    <button class="w-100 btn btn-secondary btn-md" type="submit">
-                                        Realizar Análise
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                
-                <hr class="featurette-divider">
-                <div class="sub-data">
-                    <h3>Resultados</h3>
-    
-                    <div class="chart">
-                        <ul class="numbers">
-                            <li><span>100%</span></li>
-                                <li><span>50%</span></li>
-                                <li><span>20%</span></li>
-                        </ul>
-                            <ul class="bars">
-                                <li><div class="bar" data-percentage="62"></div><span>Temperatura</span></li>
-                                <li><div class="bar" data-percentage="30"></div><span>PH</span></li>
-                                <li><div class="bar" data-percentage="12"></div><span>Salinidade</span></li>
-                                <li><div class="bar" data-percentage="52"></div><span>Nutrientes</span></li>
-                                <li><div class="bar" data-percentage="82"></div><span>Referências</span></li>
-                            </ul>
-                    </div>
-                </div>
-                <div class="cta-buttons">
-                    <a href="#" class="btn-saiba-mais"><i class="fa-solid fa-file-arrow-down"></i>Baixe o pdf</a>
-                </div>
-
-        </section>
-
-        <footer>
-            <img src="../imgs/wave.svg" alt="">
-    
-            <div id="footer-items">
-                <span id="copyright">
-                    &copy 2024 Oceanys
-                </span>
-    
-                <div class="social-media-buttons">
-                    <a href="">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa-solid fa-envelope"></i>
-                    </a>
-                </div>
             </div>
-        </footer>
-    
-    
-        <script src="../javascript/script.js"></script>
-</body>
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Enter Your password">
+                <div class="underline"></div>
+            </div>
 
+            <div class="botao-login">
+                <a href="./perfil.html" class="input submit">Continue</a>
+            </div>
+
+           
+
+        </form>
+
+        <div class="footer">
+            <span>Or Connect With Social Midia</span>
+            <div class="social-fields">
+
+
+                <div class="social-field github">
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                        Sign with GitHub
+                    </a>
+                </div>
+
+               
+                <div class="social-field google">
+                    <a href="#">
+                        <i class="fa-brands fa-google"></i>
+                        Sign with Google
+                    </a>
+                </div>
+
+                
+            </div>
+        </div>
+    </main>
+
+</body>
