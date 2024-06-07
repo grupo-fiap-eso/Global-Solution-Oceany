@@ -2,12 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import "../node_modules/bootstrap/scss/functions";
 
-/* Required Bootstrap imports*/
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/variables-dark";
-@import "../node_modules/bootstrap/scss/maps";
-@import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+
 /*.playfair-display-<uniquifier> {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -25,18 +20,12 @@
     --color-primary-1: #fff9ea;
     --color-primary-2: #1d1d1dad;
     --color-primary-3: #1d1d1d;
-    --bs-breakpoint-xs: 0;
-    --bs-breakpoint-sm: 576px;
-    --bs-breakpoint-md: 768px;
-    --bs-breakpoint-lg: 992px;
-    --bs-breakpoint-xl: 1200px;
-    --bs-breakpoint-xxl: 1400px;
 }
 
 *{
-    font-family: "Ubuntu", sans-serif;
     margin: 0;
     padding: 0;
+    font-family: "Ubuntu", sans-serif;
     box-sizing: border-box;
 }
 
@@ -426,6 +415,12 @@ INFOS */
 
 }
 
+.infos2 img{
+   
+    max-width: 100%;
+    max-height: 300px;
+}
+
 .icon-infos{
     position: absolute;
     background-color: #6073ca;
@@ -442,9 +437,9 @@ INFOS */
 
 }
 
-.info-descricao, .info-referencia{
+.info-descricao, .info-referencia span{
     color: #434343;
-    text-align: center;
+    text-align: justify;
 }
 
 .btn-infos{
@@ -513,6 +508,15 @@ SEÇÃO 3 */
     padding-top: 10rem;
     
 }
+.section3 img{
+    
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.section3 p{
+    text-align: justify;
+}
 
 .section3 ::after ::before{
     box-sizing: border-box;
@@ -536,6 +540,7 @@ hr{
     margin-top: calc(-1* var(--bs-gutter-y));
     margin-right: calc(-.5* var(--bs-gutter-x));
     margin-left: calc(-.5* var(--bs-gutter-x));
+    align-items: center;
 }
 
 @media (min-width: 768px){
@@ -595,7 +600,7 @@ graficos */
 .chart{
     width: 600px;
     height: 300px;
-    display: block;
+    display: flex;
     margin-bottom: 7rem;
 }
 
@@ -678,7 +683,18 @@ graficos */
     position: relative;
     bottom: 20px;
 
+
 }
+
+
+@media screen and (max-width: 960px){
+    .numbers,
+    .bar{
+       max-width: 100%;
+    }
+   
+}
+
 
 /*-----------------------------------------------------------------
 FORMS DE ANÁLISE */
@@ -697,14 +713,16 @@ FORMS DE ANÁLISE */
     margin-bottom: 7rem;
 }
 .form-analise{
+    border-radius: 2rem;
     background-color: #72799918;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10rem;
+    padding: 5rem;
     margin: 5rem;
 }
+
 
 .subtitulo-p{
     margin-bottom: 5rem;
