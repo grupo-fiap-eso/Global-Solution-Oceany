@@ -22,16 +22,16 @@ public class AcessoDadosDAO {
 
         PreparedStatement comandoSQL = null;
         try {
-            comandoSQL = conexao.prepareStatement("SELECT * FROM t_cadastro_dados");
+            comandoSQL = conexao.prepareStatement("SELECT * FROM t_dados");
             ResultSet resultados = comandoSQL.executeQuery();
             while (resultados.next()) {
                 CadastroDados cadastro = new CadastroDados();
-                cadastro.setResponsavel(resultados.getString(2));
-                cadastro.setTemperatura(resultados.getDouble(3));
-                cadastro.setpH(resultados.getDouble(4));
-                cadastro.setSalinidade(resultados.getDouble(5));
-                cadastro.setNivelNutriente(resultados.getDouble(6));
-                cadastro.setDate(resultados.getString(7));
+                cadastro.setResponsavel(resultados.getString(7));
+                cadastro.setTemperatura(resultados.getDouble(2));
+                cadastro.setpH(resultados.getDouble(3));
+                cadastro.setSalinidade(resultados.getDouble(4));
+                cadastro.setNivelNutriente(resultados.getDouble(5));
+                cadastro.setDate(resultados.getString(6));
                 listaCadastros.add(cadastro);
             }
             comandoSQL.close();

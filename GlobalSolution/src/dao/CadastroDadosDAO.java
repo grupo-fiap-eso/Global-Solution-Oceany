@@ -15,7 +15,7 @@ public class CadastroDadosDAO {
 
 	        try {
 	            conexao = GerenciadorBD.obterConexao();
-	            String sql = "INSERT INTO t_cadastro_dados (responsavel, temperatura, ph, salinidade, nivelNutriente, data) VALUES (?,?, ?, ?, ?, TO_DATE(?, 'DD/MM/YYYY'))";
+	            String sql = "INSERT INTO t_dados (id_responsavel, temperatura, ph, salinidade, nivel_nutriente, data) VALUES (?,?, ?, ?, ?, TO_DATE(?, 'DD/MM/YYYY'))";
 	            comandoSQL = conexao.prepareStatement(sql);
 	            comandoSQL.setString(1, cadastro.getResponsavel());
 	            comandoSQL.setDouble(2, cadastro.getTemperatura());
