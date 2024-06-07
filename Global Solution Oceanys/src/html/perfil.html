@@ -1,312 +1,116 @@
-/*Estilos padrões */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+<!DOCTYPE html>
+<html lang="pt-br">
 
-/*.playfair-display-<uniquifier> {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}*/
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceanys</title>
+    <link rel="stylesheet" href="../styles/stylesPerfil.css">
+   <script src="https://kit.fontawesome.com/9eb0a8bce2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
 
-/*.ubuntu-regular {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}*/
+</head>
 
-:root{
-    --color-primary-1: #fff9ea;
-    --color-primary-2: #1d1d1dad;
-    --color-primary-3: #1d1d1d;
-  
-}
+<body>
+    <header>
+        <nav id="navbar">
+            <img id="nav_logo" src="../imgs/imgLogo.png" alt="">
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: "Ubuntu", sans-serif;
-    }
+            <ul id="nav_list">
+                <li class="nav-item ">
+                    <a href="./indexH.html">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="../html/sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="./analiseDados.html">Análise de Dados</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./paginaCorais.html">O Mundo dos Corais</a>
+                </li>
+            </ul>
 
-html{
-    scroll-behavior: smooth;
-}
+            <a href="./perfil.html" class="btn-user">
+                <i class="fa-solid fa-circle-user"></i>
+            </a>
 
-body{
-    margin: 0;
-    background-color: #fff9ea;
-  
-}
+            <button class="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list active">
+                <li class="nav-item">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="./sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./analiseDados.html">Análise de Dados</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./paginaCorais.html">O Mundo dos Corais</a>
+                </li>
+            </ul>
+            
+            <a href="./cadastro.html" class="btn-user">
+                <i class="fa-solid fa-circle-user"></i>
+            </a>
+        </div>
+    </header>
+    <main class="container">
+        <img class="profile-image" src="../imgs/imgLogo.png" alt="">
+        <h2>João da Silva</h2>
+       <h4>Biólogo</h4>
+       <h4>joaodasilva@gmail.com</h4>
+        <div class="footer">
+            <div class="social-fields">
 
-header{
-    width: 100%;
-    padding: 8px 6%;
-    position: sticky;
-    top: 0;
-    background-color: var(--color-primary-1);
-    z-index: 3;
-}
+
+                <div class="social-field github">
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                         GitHub
+                    </a>
+                </div>
+                <div class="social-field google">
+                    <a href="#">
+                        <i class="fa-brands fa-google"></i>
+                       Google
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <img src="../imgs/wave.svg" alt="">
+
+        <div id="footer-items">
+            <span id="copyright">
+                &copy 2024 Oceanys
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
 
 
-section{
-    padding: 28px 9%;
-}
-
-
-#navbar{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#nav_logo{
-    width: 6rem;
-    margin-left: 25px;
-}
-
-#nav_list{
-    display: flex;
-    list-style: none;
-    gap: 49px;
-}
-
-.btn-user{
-    margin-right: 2.5rem;
-    color: gray;
-    background-color: transparent;
-    font-size: 33px;
-    border: none;
-}
-
-.nav-item a{
-    text-decoration: none;
-    color: var(--color-primary-2);
-    font-weight: 600;
-    font-size: 15px;
-}
-
-.nav-item.active a {
-    color: var(--color-primary-2);
-    border-bottom: 3px solid #193cd8bf;
-}
-
-.mobile_btn{
-    display: none;
-}
-
-#mobile_menu{
-    display: none;
-}
-
-@media screen and (max-width: 960px) {
-    #nav_list,
-    #navbar .btn-user{
-        display: none;
-    }  
-    .btn-user{
-        margin: 0%;
-        background-color: transparent;
-
-    }
-
-    .mobile_btn{
-        display: block;
-        border: none;
-        background-color: transparent;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    #mobile_menu.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #mobile_nav_list{
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        margin: 12px 0px;
-    }
-
-    #mobile_menu .nav-item{
-        list-style: none;
-        text-align: center;
-    }
-  
-}
-
-main{
-    display: flex;
-    margin-left: 34rem;
-    margin-top: 5rem;
-    flex-direction: column;
-}
-main.container{
-    background: #fff;
-    max-width: 350px;
-    min-height: 40vh;
-    padding: 2rem;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-
-}
-
-main h2{
-    font-weight: 600;
-    margin-bottom: 2rem;
-    position: relative;
-}
-
-main h2::before{
-    content: ' ';
-    position: absolute;
-    height: 3px;
-    width: 25px;
-    bottom: 2px;
-    left: 0;
-    border-radius: 8px;
-    background: linear-gradient(45deg, #2156c2ed, #01167385);
-
-}
-
-.profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.input-field .underline::before{
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
-    background:rgba(0, 0, 0, 0.2); 
-}
-.input-field .underline::after{
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
-    background: linear-gradient(to left, #03125385, #2156c2ed);
-    transform: scaleX(0);
-    transition: all .3s ease-in-out;
-    transform-origin: left;
-}
-
-.input-field input:focus ~ .underline::after{
-    transform: scaleX(1);
-}
-
-.input-field input{
-    outline: 0;
-    box-shadow: 0 0 00 ;
-    border: 0 none;
-    font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-.input-field .botao-login::placeholder{
-    color: rgba(0, 0, 0, 0.5);
-
-}
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-
-}
-
-.footer span{
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 0.8rem;
-    text-align: center;
-}
-
-.footer .social-field{
-    padding: 0.4rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    width: 100%;
-    cursor: pointer;
-    margin-top: 1rem;
-}
-
-.footer .social-field a i{
-    margin: 0 0.5rem;
-    width: 20px;
-}
-
-.footer .social-field a{
-    text-decoration: none;
-    color: #fff9ea;
-}
-
-.footer .social-field.github{
-    background: linear-gradient(to right, #266cee, #6196f8);
-
-}
-
-.footer .social-field.google{
-    background: linear-gradient(to right, #022c35, #074d5d);
-
-}
-
-.social-media-buttons{
-    display: flex;
-    gap: 18px;
-    /*justify-content: center;*/
-}
-
-.social-media-buttons a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 40px;
-    background-color: #fff;
-    font-size: 1.25rem;
-    border-radius: 10px;
-    text-decoration: none;
-    color: var(--color-primary-2);
-    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
-    transition: box-shadow .3s ease;
-}
-
-.social-media-buttons a:hover{
-    box-shadow: 0px 0px 12px 8px rgba(2, 19, 104, 0.158);
-}
-
-/*-----------------------------------------------
-FOOTER da pagina */
-
-footer{
-    background-color: #f7eed9;
-}
-
-#footer-items{
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 8% 24px 8%;
-    align-items: center;
-}
-
-#copyright{
-    color: var(--color-primary-2);
-    font-weight: 500;
-}
-
-@media screen and (max-width: 800px){
-    #footer-items{
-        color: var(--color-primary-2);
-        font-weight: 500;
-    }
-}
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
