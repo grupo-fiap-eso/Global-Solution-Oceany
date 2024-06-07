@@ -10,8 +10,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9eb0a8bce2.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
@@ -24,23 +24,24 @@
 
             <ul id="nav_list">
                 <li class="nav-item active">
-                    <a href="./indexH.html">Home</a>
+                    <a href="#home">Home </a>
                 </li>
                 <li class="nav-item ">
-                    <a href="../html/sobre.html">Sobre</a>
+                    <a href="./sobre.html">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#analise">Análise de Dados</a>
+                    <a href="./analiseDados.html">Análise de Dados</a>
                 </li>
                 <li class="nav-item">
                     <a href="./paginaCorais.html">O Mundo dos Corais</a>
                 </li>
             </ul>
 
-                
             <a href="./cadastro.html" class="btn-user">
                 <i class="fa-solid fa-circle-user"></i>
             </a>
+
+           
 
             <button class="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -65,105 +66,27 @@
             <a href="./cadastro.html" class="btn-user">
                 <i class="fa-solid fa-circle-user"></i>
             </a>
-        </div>
-    </header> 
-
-
-        <section class="data-section">
-            <h3 class="data-titulo">Monitoramento dos corais por meio da análise de dados</h3>
-                <p class="blog-post-meta">Os corais são organismos marinhos de extrema importância para a biodiversidade e para a saúde dos ecossistemas costeiros. No entanto, eles têm enfrentado desafios significativos, como o branqueamento causado pelo aumento das temperaturas da água e a acidificação dos oceanos. Para monitorar esses corais de maneira eficiente, cientistas estão recorrendo à inteligência artificial (IA) e à colaboração humana.
-                
-                </p>
-            <p>Redes neurais inspiradas no cérebro humano são treinadas para analisar imagens capturadas por mergulhadores, identificando sinais de branqueamento, doenças ou outras condições adversas nos corais. Essa análise automatizada permite uma avaliação mais rápida e completa.</p>
             
-                <div class="form-analise">
-                    <div class="col-md-7 col-lg-8">
-                        <h5 class="mb-3">Adicione os dados aqui</h5>
-                        <form action="" class="needs-validation" novalidate>
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <label for="name" class="form-label">Nome do responsável</label>
-                                    <input type="text" class="form-control" id="responsavel" placeholder="Roberto Patrício" value required>
-                                    <div class="invalid-feedback">É necessário informar o nome</div>
-                                    
-                                </div>
+        </div>
+    </header>
 
-                                <div class="col-sm-6">
-                                    <label for="professional" class="form-label">Profissão</label>
-                                    <input type="text" class="form-control" id="profissao" placeholder="Biólogo" value required>
-                                    <div class="invalid-feedback">É necessário informar a ocupação</div>
-                                </div>
 
-                                <div class="col-12">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="seuNome@email.com" value required>
-                                    <div class="invalid-feedback">É necessário informar o email</div>
-                                </div>
-                                <div class="row gy-3">
-                                    <div class="col-md-3">
-                                        <label for="number temperatura" class="form-label">Temperatura</label>
-                                         <input type="number" class="form-control" id="temperatura" placeholder="45C°" >
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="number ph" class="form-label">PH</label>
-                                         <input type="number" class="form-control" id="ph" placeholder="7" >
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="text" class="form-label">Salinidade</label>
-                                         <input type="number" class="form-control" id="salinidade" placeholder="Nível de salinidade da água" >
-                                    </div>
-                                    <div class="col-md-3">
-                                        <label for="text" class="form-label">Nível de Nutriente</label>
-                                         <input type="number" class="form-control" id="nutriente" placeholder="Nível de Nutriente na água" >
-                                    </div>
-                                    <div class="col-md-6">
-                                        <label for="data" class="form-label">Data</label>
-                                         <input type="date" class="form-control" id="data" placeholder="(00/00/0000)" >
-                                    </div>
-                                    <hr class="my-4 featurette-divider">
-                                    <button class="w-100 btn btn-secondary btn-md" type="submit">
-                                        Realizar Análise
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                
-                <hr class="featurette-divider">
-                <div class="sub-data">
-                    <h3>Resultados</h3>
-    
-                    <div class="chart">
-                        <ul class="numbers">
-                            <li><span>100%</span></li>
-                                <li><span>50%</span></li>
-                                <li><span>20%</span></li>
-                        </ul>
-                            <ul class="bars">
-                                <li><div class="bar" data-percentage="62"></div><span>Temperatura</span></li>
-                                <li><div class="bar" data-percentage="30"></div><span>PH</span></li>
-                                <li><div class="bar" data-percentage="12"></div><span>Salinidade</span></li>
-                                <li><div class="bar" data-percentage="52"></div><span>Nutrientes</span></li>
-                                <li><div class="bar" data-percentage="82"></div><span>Referências</span></li>
-                            </ul>
-                    </div>
-                </div>
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    Preservando os
+                    <span>Oceanos</span>
+                </h1>
+                <p class="descricao">
+                    Unidos pelo turismo e a preservação de Corais.
+                </p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn-saiba-mais"><i class="fa-solid fa-file-arrow-down"></i>Baixe o pdf</a>
+                    <a href="./sobre.html" class="btn-saiba-mais">Saiba mais</a>
                 </div>
+                
 
-        </section>
-
-        <footer>
-            <img src="../imgs/wave.svg" alt="">
-    
-            <div id="footer-items">
-                <span id="copyright">
-                    &copy 2024 Oceanys
-                </span>
-    
                 <div class="social-media-buttons">
                     <a href="">
                         <i class="fa-brands fa-whatsapp"></i>
@@ -176,9 +99,315 @@
                     </a>
                 </div>
             </div>
-        </footer>
-    
-    
-        <script src="../javascript/script.js"></script>
+
+            <div id="banner">
+                <img src="../imgs/baleia-removebg-preview.png" alt="">
+
+            </div>
+        </section>
+
+
+        <section class="sobre">
+            <hr>
+            <h2 class="sobre-title">
+                Turismo e Preservação dos Corais
+            </h2>
+
+            <div class="sobre-geral">
+                <div class="sobre-text">
+                    <div class="sobre-icon">
+                        <i class="fa-regular fa-file-lines"></i>
+                    </div>
+
+                    <h6 class="subtitulo">
+                        Monitoramento Recorrente dos Ecossistemas
+                    </h6>
+
+                    <span class="sobre-infos">
+                        <ul>
+
+                            <li>
+                                Coletar dados regularmente é fundamental para entender a saúde dos recifes de coral.
+                                Isso envolve medir a temperatura da água, a qualidade da água e a biodiversidade.
+                            </li>
+                            <li>
+                                A inteligência artificial (IA) pode ajudar a analisar esses dados e prever mudanças nos
+                                ecossistemas.
+                            </li>
+                            <li>
+                                O monitoramento contínuo permite que os gestores tomem medidas preventivas e corretivas.
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <div class="sobre-text">
+                    <div class="sobre-icon">
+                        <i class="fa-brands fa-docker"></i>
+                    </div>
+
+                    <h6 class="subtitulo">
+                        Teste de Embarcação para Cada Maré
+                    </h6>
+
+                    <span class="sobre-infos">
+                        <li>
+                            As embarcações que operam em áreas de recifes de coral devem considerar as marés. Em marés
+                            baixas, os corais ficam expostos e vulneráveis. 
+                        </li>
+                        <li>
+                            Recomenda-se o uso de embarcações mais leves e a adoção de práticas que minimizem o impacto
+                            nos corais.
+                        </li>
+                        <li>
+                            Educar os operadores de embarcações e os turistas sobre a importância desse cuidado é
+                            essencial.
+                        </li>
+                    </span>
+                </div>
+                <div class="sobre-text">
+                    <div class="sobre-icon">
+                        <i class="fa-regular fa-folder-open"></i>
+                    </div>
+
+                    <h6 class="subtitulo">
+                        Informações Disponíveis aos Turistas e Empresas
+                    </h6>
+
+                    <span class="sobre-infos">
+                        
+                        <li>
+                            Relatórios detalhados sobre os danos aos corais, as melhores práticas e as ações de
+                            conservação devem ser compartilhados.
+                        </li>
+                        <li>
+                            Conscientizar os turistas sobre como podem contribuir para a preservação dos corais é
+                            fundamental.
+                        </li>
+                    </span>
+                </div>
+                <div class="sobre-text">
+                    <div class="sobre-icon">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+
+                    <h6 class="subtitulo">
+                        Monitoramento dos Dados do Ecossistema
+                    </h6>
+
+                    <span class="sobre-infos">
+                        <li>
+                            Coletar dados regularmente é fundamental para entender a saúde dos recifes de corais. Isso envolve medir a
+                            temperatura da água, a qualidade da água e a biodiversidade. Além dos dados específicos dos, é importante acompanhar outros
+                            indicadores ambientais.
+                        </li>
+                        <li>
+                            Esses indicadores incluem a saúde geral do ecossistema, a presença de poluentes e a
+                            biodiversidade.
+                        </li>
+                        <li>
+                            O envolvimento da comunidade local e dos turistas nesse monitoramento é valioso.
+                        </li>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cards "> <!--menu-->
+            <h2 class="section-title">Notícias</h2>
+
+            <div id="infos1"> <!--dishes-->
+                <div class="infos2"> <!--dish-->
+                    <div class="icon-infos"> <!--dish-heart-->
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+
+                    <img src="../imgs/Corais-foto-1.webp" class="infos-img" alt="">
+
+                    <h3 class="info-title"> <!--dish-title-->
+                        Recifes de corais geram R$ 167 bilhões ao Brasil em serviços
+                    </h3>
+
+                    <span class="info-descricao">
+                        Estudo realizado pela Fundação Grupo Boticário é o primeiro nessa escala no país a calcular o valor dos serviços ecossistêmicos oferecidos pelos recifes de corais
+                    </span>
+                    <button type="submit" class="btn-infos">
+                        <a href="https://neomondo.org.br/2023/11/06/recifes-de-corais-geram-r-167-bilhoes-ao-brasil-em-servicos/">
+                            <i class="fa-regular fa-newspaper"></i> Leia
+                        </a>
+                    </button>
+
+                </div>
+                <div class="infos2"> <!--dish-->
+                    <div class="icon-infos"> <!--dish-heart-->
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+
+                    <img src="../imgs/img-filme.webp" class="infos-img" alt="">
+
+                    <h3 class="info-title"> <!--dish-title-->
+                        O Pinguim e o Pescador (O Filme)
+                    </h3>
+
+                    <span class="info-descricao">
+                        Inspirado em uma história verdadeira; uma aventura encantadora sobre um pinguim perdido resgatado de um derramamento de óleo, que transforma a vida de um pescador de coração partido. Eles logo se tornam amigos improváveis, tão unidos que nem mesmo o vasto oceano consegue separá-los.
+                    </span>
+                    <button class="btn-infos">
+                        <a href="https://www.instagram.com/p/C7E_1m4sTS8/?utm_source=ig_embed&amp">
+                            <i class="fa-regular fa-newspaper"></i> Leia
+                        </a>
+                    </button>
+                </div>
+                <div class="infos2"> <!--dish-->
+                    <div class="icon-infos"> <!--dish-heart-->
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <img src="../imgs/corais-foto-2.jpg" class="infos-img" alt="">
+
+                    <h3 class="info-title"> <!--dish-title-->
+                        Branqueamento severo dos corais no Brasil e no mundo
+                    </h3>
+
+                    <span class="info-descricao">
+                        Entenda como o aquecimento dos oceanos está acabando com corais no Brasil e no mundo.                    </span>
+                    <button class="btn-infos">
+                        <a href="https://agenciabrasil.ebc.com.br/internacional/noticia/2024-04/mundo-passa-por-episodio-em-massa-de-branqueamento-de-corais">
+                            <i class="fa-regular fa-newspaper"></i> Leia
+                        </a>
+                    </button>
+                </div>
+                <div class="infos2"> <!--dish-->
+                    <div class="icon-infos"> <!--dish-heart-->
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <img src="../imgs/corais-brancos-cards.jpg" class="infos-img" alt="">
+
+                    <h3 class="info-title"> <!--dish-title--> 
+                        Perda de corais devido ao aumento da temperatura na superfície do mar
+                    </h3>
+                       <span class="info-descricao">
+                        Descubra como as mudanças climáticas afetam os corais e como a perda dos recifes de coral é catastrófico para o nosso planeta.
+                                        </span>
+                    <button class="btn-infos">
+                        <a href="https://www.unep.org/pt-br/noticias-e-reportagens/comunicado-de-imprensa/o-planeta-perdeu-14-de-seus-corais-desde-2009-devido">
+                            <i class="fa-regular fa-newspaper"></i> Leia
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3">
+            
+            <h2 class="sobre-title">
+                O Mundo dos Corais
+                </h2>
+                <p>Saiba mais sobre os corais <br> <a href="./paginaCorais.html">Os Corais</a></p>
+                <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Qual a importância dos recifes de corais para o turismo?</h2>
+                    <p class="lead">Assim como o turismo é importante para o país e localidades, não podemos esquecer das atrações 
+                        principais, os recifes de corais. Saiba a sua importância. 
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="700"
+                        height="700" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice"
+                        focusable="false" src="../imgs/img-corais.jpg" alt="">
+
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Afinal, o que são corais?
+                        <!--<span class="text-body-secondary">Segundo titulo</span>-->
+                    </h2>
+                    <p class="lead">Saiba mais sobre os corais, o que são e qual a sua importância para o meio ambiente.
+                    </p>
+                </div>
+
+                <div class="col-md-5 order-md-1">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="500" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice"
+                        focusable="false" src="../imgs/corais-imagem.jpg" alt="">
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="data-section">
+            <hr class="featurette-divider">
+            <div class="titulo-data">
+                <h2 class="data-titulo">Monitoramento dos corais por meio da análise de dados</h2>
+                <p class="blog-post-meta">Atualmente, o monitoramento de corais é realizado por mergulhadores especializados, que coletam amostras para análise em laboratórios. No entanto, essa abordagem é trabalhosa e demorada.
+                    <a href="./analiseDados.html">Faça uma análise</a>
+                </p>
+                <p>É aí que a IA entra em cena. Redes neurais inspiradas no cérebro humano são treinadas para analisar imagens capturadas por mergulhadores, identificando sinais de branqueamento, doenças ou outras condições adversas nos corais. Essa análise automatizada permite uma avaliação mais rápida e completa.</p>
+            </div>
+                
+            <div class="sub-data">
+                <h3>Resultados</h3>
+
+                <div class="chart">
+                    <ul class="numbers">
+                        <li><span>100%</span></li>
+                            <li><span>50%</span></li>
+                            <li><span>20%</span></li>
+                    </ul>
+                    <ul class="bars">
+                        <li><div class="bar" data-percentage="62"></div><span>Temperatura</span></li>
+                        <li><div class="bar" data-percentage="30"></div><span>PH</span></li>
+                        <li><div class="bar" data-percentage="12"></div><span>Salinidade</span></li>
+                        <li><div class="bar" data-percentage="52"></div><span>Nutrientes</span></li>
+                        <li><div class="bar" data-percentage="82"></div><span>Referências</span></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+        <hr class="featurette-divider">
+
+        <section class="mapa">
+            <h3 class="titulo-principal">Acompanhe o mapa global dos recifes tropicais em águas rasas</h3>
+            <p>Cientistas completaram o primeiro mapa global em alta resolução dos recifes de corais tropicais em águas rasas. Essa conquista é parte do Allen Coral Atlas, uma plataforma de monitoramento de recifes de coral de acesso aberto.
+                <a href="https://oeco.org.br/reportagens/o-primeiro-mapa-completo-dos-recifes-de-corais-tropicais-em-aguas-rasas-esta-aqui/">Saiba mais</a>
+            </p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.5288331145002!2d-42.025400424909854!3d-22.967573179212405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9719668ed2782d%3A0xc938a5e099def401!2sAcqua%20World%20-%20Escola%20e%20Operadora%20de%20Mergulho%20em%20Arraial%20do%20Cabo!5e0!3m2!1spt-BR!2sbr!4v1717790422822!5m2!1spt-BR!2sbr"
+                width="1300" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <img src="../imgs/wave.svg" alt="">
+
+        <div id="footer-items">
+            <span id="copyright">
+                &copy 2024 Oceanys
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../javascript/script.js"></script>
 </body>
 
+</html>
