@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oceanys</title>
-    <link rel="stylesheet" href="./src/styles/stylesHome.css">
+    <link rel="stylesheet" href="../styles/stylesHome.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9eb0a8bce2.js" crossorigin="anonymous"></script>
@@ -20,23 +20,28 @@
 
     <header>
         <nav id="navbar">
-            <img id="nav_logo" src="./src/imgs/imgLogo.png" alt="">
+            <img id="nav_logo" src="../imgs/imgLogo.png" alt="">
 
             <ul id="nav_list">
                 <li class="nav-item active">
-                    <a href="#home">Home</a>
+                    <a href="#home">Home </a>
                 </li>
                 <li class="nav-item ">
-                    <a href="./src/html/sobre.html">Sobre</a>
+                    <a href="./sobre.html">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./src/html/analiseDados.html">Análise de Dados</a>
+                    <a href="./analiseDados.html">Análise de Dados</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./paginaCorais.html">O Mundo dos Corais</a>
                 </li>
             </ul>
 
-            <a href="./src/html/perfil.html" class="btn-user">
+            <a href="./cadastro.html" class="btn-user">
                 <i class="fa-solid fa-circle-user"></i>
             </a>
+
+           
 
             <button class="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -47,16 +52,20 @@
                 <li class="nav-item">
                     <a href="#home">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a href="./src/html/sobre.html">Sobre</a>
+                <li class="nav-item ">
+                    <a href="./sobre.html">Sobre</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./src/html/analiseDados.html">Análise de Dados</a>
+                    <a href="./analiseDados.html">Análise de Dados</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./paginaCorais.html">O Mundo dos Corais</a>
                 </li>
             </ul>
-            <button class="btn-user">
+            
+            <a href="./src/html/cadastro.html" class="btn-user">
                 <i class="fa-solid fa-circle-user"></i>
-            </button>
+            </a>
         </div>
     </header>
 
@@ -73,8 +82,9 @@
                     Unidos pelo turismo e a preservação de Corais.
                 </p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn-saiba-mais">Saiba mais</a>
+                    <a href="./sobre.html" class="btn-saiba-mais">Saiba mais</a>
                 </div>
+                
 
                 <div class="social-media-buttons">
                     <a href="">
@@ -90,7 +100,7 @@
             </div>
 
             <div id="banner">
-                <img src="./src/imgs/baleia-removebg-preview.png" alt="">
+                <img src="../imgs/baleia-removebg-preview.png" alt="">
 
             </div>
         </section>
@@ -204,10 +214,7 @@
         </section>
 
         <section class="cards "> <!--menu-->
-            <h2 class="section-title">Título</h2>
-            <p class="section-subtitle">Saiba mais notícias 
-                <a href="#">Link para página de notícias...</a>
-            </p>
+            <h2 class="section-title">Notícias</h2>
 
             <div id="infos1"> <!--dishes-->
                 <div class="infos2"> <!--dish-->
@@ -215,42 +222,47 @@
                         <i class="fa-solid fa-earth-americas"></i>
                     </div>
 
-                    <img src="./src/imgs/corais.jpg" class="infos-img" alt="">
+                    <img src="../imgs/Corais-foto-1.webp" class="infos-img" alt="">
 
                     <h3 class="info-title"> <!--dish-title-->
-                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        Recifes de corais geram R$ 167 bilhões ao Brasil em serviços
                     </h3>
 
                     <span class="info-descricao">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        Estudo realizado pela Fundação Grupo Boticário é o primeiro nessa escala no país a calcular o valor dos serviços ecossistêmicos oferecidos pelos recifes de corais
                     </span>
-                    <span class="info-referencia">Referências</span>
-                    <button class="btn-infos">
-                        <i class="fa-regular fa-newspaper"></i> Leia</button>
+                    <button type="submit" class="btn-infos">
+                        <a href="https://neomondo.org.br/2023/11/06/recifes-de-corais-geram-r-167-bilhoes-ao-brasil-em-servicos/">
+                            <i class="fa-regular fa-newspaper"></i> Leia
+                        </a>
+                    </button>
+
                 </div>
                 <div class="infos2"> <!--dish-->
                     <div class="icon-infos"> <!--dish-heart-->
                         <i class="fa-solid fa-earth-americas"></i>
                     </div>
 
-                    <img src="./src/imgs/corais.jpg" class="infos-img" alt="">
+                    <img src="../imgs/img-filme.webp" class="infos-img" alt="">
 
                     <h3 class="info-title"> <!--dish-title-->
-                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                        O Pinguim e o Pescador (O Filme)
                     </h3>
 
                     <span class="info-descricao">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        Inspirado em uma história verdadeira; uma aventura encantadora sobre um pinguim perdido resgatado de um derramamento de óleo, que transforma a vida de um pescador de coração partido. Eles logo se tornam amigos improváveis, tão unidos que nem mesmo o vasto oceano consegue separá-los.
                     </span>
-                    <span class="info-referencia">Referências</span>
                     <button class="btn-infos">
-                        <i class="fa-regular fa-newspaper"></i> Leia</button>
+                        <a href="#">
+                            <i class="fa-regular fa-newspaper"></i> Leia
+                        </a>
+                    </button>
                 </div>
                 <div class="infos2"> <!--dish-->
                     <div class="icon-infos"> <!--dish-heart-->
                         <i class="fa-solid fa-earth-americas"></i>
                     </div>
-                    <img src="./src/imgs/corais.jpg" class="infos-img" alt="">
+                    <img src="../imgs/corais.jpg" class="infos-img" alt="">
 
                     <h3 class="info-title"> <!--dish-title-->
                         Lorem ipsum dolor sit, amet consectetur adipisicing.
@@ -261,13 +273,16 @@
                     </span>
                     <span class="info-referencia">Referências</span>
                     <button class="btn-infos">
-                        <i class="fa-regular fa-newspaper"></i> Leia</button>
+                        <a href="#">
+                            <i class="fa-regular fa-newspaper"></i> Leia
+                        </a>
+                    </button>
                 </div>
                 <div class="infos2"> <!--dish-->
                     <div class="icon-infos"> <!--dish-heart-->
                         <i class="fa-solid fa-earth-americas"></i>
                     </div>
-                    <img src="./src/imgs/corais.jpg" class="infos-img" alt="">
+                    <img src="../imgs/corais.jpg" class="infos-img" alt="">
 
                     <h3 class="info-title"> <!--dish-title-->
                         Lorem ipsum dolor sit, amet consectetur adipisicing.
@@ -278,22 +293,33 @@
                     </span>
                     <span class="info-referencia">Referências</span>
                     <button class="btn-infos">
-                        <i class="fa-regular fa-newspaper"></i> Leia</button>
+                        <a href="#">
+                            <i class="fa-regular fa-newspaper"></i> Leia
+                        </a>
+                    </button>
                 </div>
             </div>
         </section>
 
         <section class="section3">
+            
+            <h2 class="sobre-title">
+                O Mundo dos Corais
+                </h2>
+                <p>Saiba mais sobre os corais <br> <a href="./paginaCorais.html">Os Corais</a></p>
+                <hr class="featurette-divider">
+
             <div class="row featurette">
                 <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1">TÍTULO</h2>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, incidunt.
+                    <h2 class="featurette-heading fw-normal lh-1">Qual a importância dos recifes de corais para o turismo?</h2>
+                    <p class="lead">Assim como o turismo é importante para o país e localidades, não podemos esquecer das atrações 
+                        principais, os recifes de corais. Saiba a sua importância. 
                     </p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" src="./src/imgs/corais.jpg" alt="">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="700"
+                        height="700" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice"
+                        focusable="false" src="../imgs/img-corais.jpg" alt="">
 
                 </div>
             </div>
@@ -301,17 +327,17 @@
             <hr class="featurette-divider">
             <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">TÍTULO
-                        <span class="text-body-secondary">Segundo titulo</span>
+                    <h2 class="featurette-heading fw-normal lh-1">Afinal, o que são corais?
+                        <!--<span class="text-body-secondary">Segundo titulo</span>-->
                     </h2>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus, incidunt.
+                    <p class="lead">Saiba mais sobre os corais, o que são e qual a sua importância para o meio ambiente.
                     </p>
                 </div>
 
                 <div class="col-md-5 order-md-1">
                     <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
                         height="500" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" src="./src/imgs/corais.jpg" alt="">
+                        focusable="false" src="../imgs/corais-imagem.jpg" alt="">
 
                 </div>
 
@@ -330,24 +356,24 @@
             </div>
                 
             <div class="sub-data">
-                <h3>Subtitulo</h3>
+                <h3>A análise de Dados</h3>
 
-                    <p class="subtitulo-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus?</p>
+                    <p class="subtitulo-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, nisi.</p>
                 <div class="chart">
                     <ul class="numbers">
                         <li><span>100%</span></li>
-                            <li><span>100%</span></li>
-                            <li><span>100%</span></li>
-                        </ul>
-                        <ul class="bars">
-                            <li><div class="bar" data-percentage="62"></div><span>Opção 1</span></li>
-                            <li><div class="bar" data-percentage="30"></div><span>Opção 1</span></li>
-                            <li><div class="bar" data-percentage="12"></div><span>Opção 1</span></li>
-                            <li><div class="bar" data-percentage="52"></div><span>Opção 1</span></li>
-                            <li><div class="bar" data-percentage="82"></div><span>Opção 1</span></li>
-                        </ul>
-                    </div>
+                            <li><span>50%</span></li>
+                            <li><span>20%</span></li>
+                    </ul>
+                    <ul class="bars">
+                        <li><div class="bar" data-percentage="62"></div><span>Temperatura</span></li>
+                        <li><div class="bar" data-percentage="30"></div><span>PH</span></li>
+                        <li><div class="bar" data-percentage="12"></div><span>Salinidade</span></li>
+                        <li><div class="bar" data-percentage="52"></div><span>Nutrientes</span></li>
+                        <li><div class="bar" data-percentage="82"></div><span>Referências</span></li>
+                    </ul>
                 </div>
+            </div>
 
         </section>
         <hr class="featurette-divider">
@@ -363,7 +389,7 @@
     </main>
 
     <footer>
-        <img src="./src/imgs/wave.svg" alt="">
+        <img src="../imgs/wave.svg" alt="">
 
         <div id="footer-items">
             <span id="copyright">
@@ -385,7 +411,7 @@
     </footer>
 
 
-    <script src="./src/javascript/script.js"></script>
+    <script src="../javascript/script.js"></script>
 </body>
 
 </html>
